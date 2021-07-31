@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mailer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <form id="form" action="/auth/result" method = "post">
+                
+                <h3>Write details</h3>
+                <input type="email" id="from" class="from" name="from" placeholder="sender email">
+                <input type="email" id="to" class="to" name="to" placeholder="reciever email">
+                <input type="text" id="sub" class="sub" name="sub" placeholder="enter subject">
+                <textarea name="message" id="message" class="message" cols="30" rows="5" placeholder="message"></textarea>
+                <button type="submit" id="submit" name="submit">Submit</button>
+                
+            </form>
+        </div>
+</body>
+</html>
