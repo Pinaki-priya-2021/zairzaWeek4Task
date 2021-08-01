@@ -6,6 +6,8 @@ const authRouter = require('./routes/auth');
 
 
 /*********************Defining paths*******************/
+app.use(express.urlencoded ({extended : false}));
+app.use(express.json());
 app.use(express.static(path.join(__dirname,'/assets')));
 app.set('views' , path.join(__dirname , 'views'));
 app.engine('html', require('ejs').renderFile);
